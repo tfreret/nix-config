@@ -35,6 +35,7 @@ in
       homeManager.zsh
       homeManager.go
       homeManager.podman
+      homeManager.python
     ];
   };
 }
