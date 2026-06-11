@@ -36,6 +36,7 @@ in
       homeManager.go
       homeManager.podman
       homeManager.python
+      homeManager.cloud
     ];
   };
 }
