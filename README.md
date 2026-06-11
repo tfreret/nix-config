@@ -1,8 +1,10 @@
-# nix-config
+# NixOS & nix-darwin Configurations
 
-Personal nix-config to manage nixos, darwin and home manager.
-The config follow the [dendritic pattern](https://github.com/mightyiam/dendritic) and is heavily inspired by [AlexNabokikh personal config](https://github.com/AlexNabokikh/nix-config/tree/master/modules).
+A single Nix flake covering my NixOS hosts and macOS hosts.
 
+The repo follows the [dendritic pattern](https://github.com/mightyiam/dendritic) and is heavily inspired by [AlexNabokikh personal config](https://github.com/AlexNabokikh/nix-config/tree/master/modules).
+
+## Flake modules with flake-part and import-tree
 ```
 flake.nix
   └─ import-tree ./modules      ← auto-loads every .nix under modules/
@@ -13,7 +15,7 @@ flake.nix
        ├─ users.nix             ← defines flake.modules.{darwin,nixos}.users
        ├─ darwin/               ← darwin-specific modules
        ├─ profile/              ← identity & user option definitions
-       ├─ programs/             ← home-manager program modules
+       ├─ home/             ← home-manager program modules
        ├─ configurations/       ← turns configurations.darwin.* → flake.darwinConfigurations
        └─ hosts/                ← one file per machine, sets configurations.darwin.<name>
 ```

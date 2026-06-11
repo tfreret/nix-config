@@ -1,7 +1,12 @@
 { inputs, ... }:
 {
   flake.modules.generic.nixSettings =
-    { config, lib, pkgs, ... }:
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
     {
       nixpkgs.config.allowUnfree = true;
 

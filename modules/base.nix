@@ -30,8 +30,10 @@ in
   flake.modules.homeManager.base = {
     imports = [
       generic.profile
+      homeManager.cli
       homeManager.git
       homeManager.zsh
+      # homeManager.go
     ];
   };
 }
