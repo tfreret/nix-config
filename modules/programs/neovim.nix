@@ -1,0 +1,27 @@
+{
+  flake.modules.homeManager.neovim =
+    { pkgs, ... }:
+    {
+      programs.neovim = {
+        enable = true;
+        defaultEditor = true;
+        vimAlias = true;
+        viAlias = true;
+        withPython3 = false;
+        withRuby = false;
+        # plugins = [];
+      };
+
+      # Deploy LazyVim starter config to nvim
+      # TODO: Create my own config + theme
+      xdg.configFile."nvim" = {
+        source = pkgs.fetchFromGitHub {
+          owner = "LazyVim";
+          repo = "starter";
+          rev = "main";
+          sha256 = "sha256-QrpnlDD4r1X4C8PqBhQ+S3ar5C+qDrU1Jm/lPqyMIFM=";
+        };
+        recursive = true;
+      };
+    };
+}

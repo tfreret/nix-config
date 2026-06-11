@@ -37,6 +37,7 @@ in
       homeManager.podman
       homeManager.python
       homeManager.cloud
+      homeManager.neovim
     ];
   };
 }
