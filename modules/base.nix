@@ -33,7 +33,8 @@ in
       homeManager.cli
       homeManager.git
       homeManager.zsh
-      # homeManager.go
+      homeManager.go
+      homeManager.podman
     ];
   };
 }

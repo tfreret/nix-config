@@ -15,7 +15,7 @@ flake.nix
        ├─ users.nix             ← defines flake.modules.{darwin,nixos}.users
        ├─ darwin/               ← darwin-specific modules
        ├─ profile/              ← identity & user option definitions
-       ├─ home/             ← home-manager program modules
+       ├─ programs/             ← home-manager program modules
        ├─ configurations/       ← turns configurations.darwin.* → flake.darwinConfigurations
        └─ hosts/                ← one file per machine, sets configurations.darwin.<name>
 ```
