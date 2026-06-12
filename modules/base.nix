@@ -38,6 +38,7 @@ in
       homeManager.python
       homeManager.cloud
       homeManager.neovim
+      homeManager.ai
     ];
   };
 }
