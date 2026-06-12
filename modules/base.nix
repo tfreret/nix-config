@@ -39,6 +39,10 @@ in
       homeManager.cloud
       homeManager.neovim
       homeManager.ai
+      homeManager.javascript
+      homeManager.sql
+      homeManager.rust
+      homeManager.tmux
     ];
   };
 }
