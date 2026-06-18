@@ -1,7 +1,6 @@
 # Variables (override these as needed)
 HOSTNAME ?= $(shell hostname)
-#FLAKE ?= ./#$(HOSTNAME)
-FLAKE ?= .#simple
+FLAKE ?= .#$(HOSTNAME)
 EXPERIMENTAL ?= --extra-experimental-features "nix-command flakes"
 
 .PHONY: help install-nix install-nix-darwin darwin-rebuild nixos-rebuild \

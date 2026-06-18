@@ -1,1 +1,3 @@
-# TODO
+{
+	flake.modules.homeManager.ssh = { ... }: { };
+}

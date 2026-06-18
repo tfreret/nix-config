@@ -1,1 +1,3 @@
-# TODO
+{
+	flake.modules.nixos.gaming = { ... }: { };
+}
