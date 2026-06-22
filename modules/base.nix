@@ -44,6 +44,7 @@ in
       homeManager.sql
       homeManager.rust
       homeManager.tmux
+      homeManager.zed
     ];
   };
 }
