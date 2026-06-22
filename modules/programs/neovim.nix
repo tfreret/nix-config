@@ -13,7 +13,10 @@
       };
 
       # Deploy LazyVim starter config to nvim
-      # TODO: Create my own config + theme
+      # TODO: Create my own config + theme.
+      # TODO: Pin rev to a commit SHA — "main" breaks on flake update when the branch moves.
+      #   Run: nix-prefetch-url --unpack https://github.com/LazyVim/starter/archive/<commit>.tar.gz
+      #   then update rev and sha256 here.
       xdg.configFile."nvim" = {
         source = pkgs.fetchFromGitHub {
           owner = "LazyVim";

@@ -7,6 +7,7 @@
         kubectx
         kubernetes-helm
         kustomize
+        helmfile
 
         terraform
         #opentofu
