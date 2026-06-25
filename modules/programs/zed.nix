@@ -16,9 +16,16 @@
           "nix"
           "toml"
           "dockerfile"
+          "docker-compose"
           "helm"
+          "gotmpl"
+          "proto"
           "sql"
           "csv"
+          "git-firefly"
+          "latex"
+          "make"
+          "php"
         ];
 
         userSettings = {
