@@ -23,6 +23,7 @@ in
       darwin.users
       darwin.sudo
       darwin.systemPreferences
+      darwin.packages
       darwin.homebrew
     ];
     home-manager.sharedModules = [ homeManager.base ];
