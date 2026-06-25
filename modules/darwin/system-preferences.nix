@@ -10,7 +10,7 @@
 
         NSGlobalDomain = {
           "com.apple.sound.beep.volume" = 0.000;
-          AppleInterfaceStyle = "Dark";
+          # AppleInterfaceStyle = "Dark"; # uncomment to force dark mode
           ApplePressAndHoldEnabled = false;
           AppleShowAllExtensions = true;
           InitialKeyRepeat = 20;
@@ -29,7 +29,6 @@
 
         trackpad = {
           TrackpadRightClick = true;
-          TrackpadThreeFingerDrag = true;
           Clicking = true;
         };
 
@@ -78,6 +77,9 @@
           };
 
           NSGlobalDomain."com.apple.mouse.linear" = true;
+
+          # Three-finger drag lives in Accessibility domain, not trackpad
+          "com.apple.AppleMultitouchTrackpad".TrackpadThreeFingerDrag = 1;
         };
       };
     };
