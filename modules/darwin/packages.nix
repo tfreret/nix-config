@@ -4,8 +4,9 @@
     {
       environment.systemPackages = [
         pkgs.betterdisplay
-        # ice
-        # stats
+        # pkgs.ice-bar
+        # pkgs.stats
+        # Mole macos cleanup tool (https://github.com/tw93/Mole) -> no nix-pkgs
       ];
     };
 }
