@@ -13,7 +13,7 @@
         };
 
         taps = [ ];
-        brews = [ ];
+        brews = ["mole"];
         casks = [ ];
       };
     };

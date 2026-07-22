@@ -6,6 +6,7 @@
         nodejs
         pnpm
         bun
+        openspec
       ];
     };
 }

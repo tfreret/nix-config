@@ -30,7 +30,7 @@
 
         userSettings = {
           # vim_mode = true;
-          relative_line_numbers = true;
+          relative_line_numbers = "disabled";
 
           theme = {
             mode = "system";

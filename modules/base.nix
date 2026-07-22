@@ -46,6 +46,8 @@ in
       homeManager.rust
       homeManager.tmux
       homeManager.zed
+      homeManager.bruno
+      homeManager.drawio
     ];
   };
 }

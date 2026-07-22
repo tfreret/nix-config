@@ -10,7 +10,7 @@
         helmfile
 
         terraform
-        #opentofu
+        opentofu
 
         # awscli
         # azure-cli

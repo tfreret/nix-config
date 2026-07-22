@@ -10,7 +10,7 @@
     {
       nixpkgs.config.allowUnfree = true;
 
-      nix = {
+      nix = lib.mkIf config.nix.enable {
         registry = lib.mapAttrs (_: flake: { inherit flake; }) (
           lib.filterAttrs (_: lib.isType "flake") inputs
         );

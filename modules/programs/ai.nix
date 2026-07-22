@@ -5,6 +5,7 @@
       home.packages = with pkgs; [
         opencode
         claude-code
+        github-copilot-cli
       ];
     };
 }

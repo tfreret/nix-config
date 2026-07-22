@@ -10,6 +10,11 @@
           theme = "fishy";
         };
 
+        initExtra = ''
+          # Homebrew
+          eval "$(/opt/homebrew/bin/brew shellenv)"
+        '';
+
         shellAliases = {
           ll = "ls -lah";
           la = "ls -A";
