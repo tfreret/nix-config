@@ -12,9 +12,9 @@
           # Homebrew is install in case a package is not availabe on nix pkgs
         };
 
-        taps = [ ];
+        taps = [];
         brews = ["mole"];
-        casks = [ ];
+        casks = ["stats"]; #TODO replace to a nix pkgs
       };
     };
 }

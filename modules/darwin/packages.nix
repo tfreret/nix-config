@@ -4,7 +4,6 @@
     {
       environment.systemPackages = [
         pkgs.ice-bar
-        pkgs.stats
       ];
     };
 }
